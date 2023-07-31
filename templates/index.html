@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>AI SwiftFlow</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='icon.jpg') }}" alt="" id="chatbot-icon" onclick="toggleChatbot()">
+    <div id="chatbot" style="display:none;">
+        <div class="chatbot-info">
+            <img src="{{ url_for('static', filename='pngwing.com_.png') }}" alt="" id="chatbot-img">
+            <p id="chatbot-name">Bissa - Virtual Assistant</p>
+        </div>
+        <div class="chatbot-convo">
+        </div>
+        <div id="chatbot-input">
+            <input type="text" placeholder="Enter Your Question here" id="chatbot-input-field">
+            <img src="{{ url_for('static', filename='send.png') }}" alt="" id="chatbot-send" onclick="sendMessage()">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
