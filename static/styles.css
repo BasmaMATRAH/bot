@@ -148,8 +148,9 @@
         transform: translateY(-50%);*/
     }
     #chatbot-icon {
-        top: 1%; /* Adjusted to be consistent with small screens */
-        height: 6%;
+         top: 92.5%;
+         height: 6%;
+         right:3%;
     }
 }
 
