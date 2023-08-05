@@ -157,7 +157,7 @@
     }
 }
 
-/* Responsive design for medium to large screens */
+/* Responsive design for medium to large screens 
 @media (min-width: 768px) {
     #chatbot-icon {
         top: 92.5%;
@@ -165,11 +165,11 @@
         right:3%;
     }
     #chatbot {
-        width: 25%; /* Adjust the width as per your preference */
-        height: 100%;
+        width: 90vw; /* Adjust the width as per your preference 
+        height: 80vh;
         right: 0;
         top: 0;
         border-radius: 0.5cm;
     }
-}
+}*/
   
