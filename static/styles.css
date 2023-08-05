@@ -1,23 +1,26 @@
-#chatbot-icon {
+#chatbot {
+    position: fixed;
+    width: 90vw;
+    border: 1px solid rgb(163, 162, 162);
+    display: block;
+    height: 80vh;
+    right: 0; /* Changed to right: 0 to align the chatbot to the right without any margin */
+    top: -10%;
+    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
+    z-index:20;
+  }
+  
+  #chatbot-icon {
     height: 6%;
     display: flex;
     position: fixed;
     right: 1%;
-    top: 1%;
+    top: 1%; /* Changed to top: 1% to align the icon to the top without any margin */
     box-shadow: 0 0 0.1cm rgb(120, 120, 120);
     border-radius: 50%;
-    z-index: 2; /* Ensures icon appears above chatbot */
-}
-
-#chatbot {
-    position: fixed;
-    width: 100%; /* Covers the whole screen on small devices */
-    height: 89%; /* Covers the whole screen on small devices */
-    background-color: white; /* Set background color for the chatbot */
-    display: none;
-    z-index: 1; /* Ensure chatbot appears below the icon */
-}
-
+    z-index:20;
+  }
+  
 #chatbot-icon:hover{
     cursor: pointer;
 }
