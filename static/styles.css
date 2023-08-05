@@ -176,3 +176,30 @@ body{
         display: none;
     }
 }
+
+
+/*the modifications*/
+/* ... (your other CSS rules) ... */
+#chatbot-icon-container {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 20;
+}
+#chatbot-icon {
+    height: 6%;
+    display: flex;
+    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
+    border-radius: 50%;
+}
+
+/* Responsive design for screens with width 467px and below */
+@media (max-width: 467px) {
+    #chatbot {
+        width: 100%;
+        height: 100%;
+    }
+    #chatbot-icon-container {
+        display: none;
+    }
+}
