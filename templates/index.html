@@ -8,9 +8,7 @@
 </head>
 <body>
     <p id="extra">hello</p>
-    <div id="chatbot-icon-container">
-        <img src="{{ url_for('static', filename='icon.jpg') }}" alt="" id="chatbot-icon" onclick="toggleChatbot()">
-    </div>
+    <img src="{{ url_for('static', filename='icon.jpg') }}" alt="" id="chatbot-icon" onclick="toggleChatbot()">
     <div id="chatbot" style="display:none;">
         <div class="chatbot-info">
             <img src="{{ url_for('static', filename='pngwing.com_.png') }}" alt="" id="chatbot-img">
