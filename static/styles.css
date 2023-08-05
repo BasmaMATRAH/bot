@@ -207,6 +207,7 @@ body{
         top:0;
     }
     #chatbot-icon {
+        display:flex;
         position:fixed;
         right:50%;
         height:50%;
