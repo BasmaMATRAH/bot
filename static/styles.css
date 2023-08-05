@@ -12,7 +12,7 @@
 #chatbot {
     position: fixed;
     width: 100%; /* Covers the whole screen on small devices */
-    height: 100%; /* Covers the whole screen on small devices */
+    height: 89%; /* Covers the whole screen on small devices */
     background-color: white; /* Set background color for the chatbot */
     display: none;
     z-index: 1; /* Ensure chatbot appears below the icon */
