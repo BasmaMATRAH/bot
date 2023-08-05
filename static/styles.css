@@ -185,7 +185,7 @@ body{
 
 
 /*the modifications*/
-/* ... (your other CSS rules) ... */
+/* ... (your other CSS rules) ... *//*
 #chatbot-icon-container {
     position: fixed;
     bottom: 1%;
@@ -203,9 +203,12 @@ body{
 @media (max-width: 467px) {
     #chatbot {
         width: 100%;
-        height: 100%;
+        height: 80%;
+        top:0;
     }
-    #chatbot-icon-container {
-        display: none;
+    #chatbot-icon {
+        right:6%;
+        height:15%;
+        top:4%;
     }
 }
