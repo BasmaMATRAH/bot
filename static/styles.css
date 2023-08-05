@@ -89,7 +89,7 @@
 #chatbot-send:hover{
     cursor: pointer;
 }
-/* Responsive design for extra small screens */
+/* Responsive design for extra small screens 
 @media (max-width: 480px) {
     #chatbot {
       width: 100%;
