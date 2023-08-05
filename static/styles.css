@@ -1,43 +1,23 @@
-/*#chatbot{
-    width: 10cm;
-    border: 1px solid rgb(163, 162, 162);
-    display: block;
-    height: 91%;
-    position: fixed;
-    left: 75%;
-    /*top: 7%;
-    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-}
-#chatbot-icon{
-    height: 6%;
-    display: flex;
-    position:fixed;
-    left: 95%;
-    top: 93.5%;
-    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-    border-radius: 50%;
-}*/
-#chatbot {
-    position: fixed;
-    width: 90vw;
-    border: 1px solid rgb(163, 162, 162);
-    display: block;
-    height: 80vh;
-    right: 0; /* Changed to right: 0 to align the chatbot to the right without any margin */
-    top: -10%;
-    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-  }
-  
-  #chatbot-icon {
+#chatbot-icon {
     height: 6%;
     display: flex;
     position: fixed;
     right: 1%;
-    top: 1%; /* Changed to top: 1% to align the icon to the top without any margin */
+    top: 1%;
     box-shadow: 0 0 0.1cm rgb(120, 120, 120);
     border-radius: 50%;
-  }
-   
+    z-index: 2; /* Ensures icon appears above chatbot */
+}
+
+#chatbot {
+    position: fixed;
+    width: 100%; /* Covers the whole screen on small devices */
+    height: 100%; /* Covers the whole screen on small devices */
+    background-color: white; /* Set background color for the chatbot */
+    display: none;
+    z-index: 1; /* Ensure chatbot appears below the icon */
+}
+
 #chatbot-icon:hover{
     cursor: pointer;
 }
@@ -106,7 +86,6 @@
 #chatbot-send:hover{
     cursor: pointer;
 }
-
 /* Responsive design for extra small screens */
 @media (max-width: 480px) {
     #chatbot {
@@ -121,7 +100,7 @@
     }
   }
   
-  /* Responsive design for small screens */
+  /* Responsive design for small screens 
   @media (min-width: 481px) and (max-width: 767px) {
     #chatbot {
       width: 90%;
@@ -138,14 +117,14 @@
     }
   }
   
-  /* Responsive design for medium to large screens */
+  /* Responsive design for medium to large screens 
   @media (min-width: 768px) {
     #chatbot-icon {
       height: 6%;
       display: flex;
       position: fixed;
-      right: 2%; /* Modified to position the icon on the right side */
-      top: 92.5%; /* Adjusted to be consistent with small screens */
+      right: 2%; /* Modified to position the icon on the right side 
+      top: 92.5%; /* Adjusted to be consistent with small screens 
       box-shadow: 0 0 0.1cm rgb(120, 120, 120);
       border-radius: 50%;
     }
@@ -155,10 +134,38 @@
       display: block;
       height: 91%;
       position: fixed;
-      right: 0%; /* Modified to position the chatbot on the right side */
+      right: 0%; /* Modified to position the chatbot on the right side 
       top: 0%;
       box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-     /* border-radius: 0.5cm;*/
+     /* border-radius: 0.5cm;
     }
-  }
+  }*/
+@media (min-width: 481px) and (max-width: 767px) {
+    #chatbot {
+        width: 90%;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 0.5cm;
+    }
+    #chatbot-icon {
+        top: 1%; /* Adjusted to be consistent with small screens */
+        height: 6%;
+    }
+}
+
+/* Responsive design for medium to large screens */
+@media (min-width: 768px) {
+    #chatbot-icon {
+        top: 92.5%;
+        height: 6%;
+    }
+    #chatbot {
+        width: 25%; /* Adjust the width as per your preference */
+        height: 100%;
+        right: 0;
+        top: 0;
+        border-radius: 0.5cm;
+    }
+}
   
