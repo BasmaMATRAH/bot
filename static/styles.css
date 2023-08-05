@@ -1,29 +1,4 @@
-/*#chatbot{
-    width: 10cm;
-    border: 1px solid rgb(163, 162, 162);
-    display: block;
-    height: 91%;
-    position: fixed;
-    left: 75%;
-    /*top: 7%;
-    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-}
-#chatbot-icon{
-    height: 6%;
-    display: flex;
-    position:fixed;
-    left: 95%;
-    top: 93.5%;
-    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-    border-radius: 50%;
-}*/
-#extra{
-    position:relative;
-    background-color:red;
-    width:100%;
-    left:50%;
-}
-body{
+  body{
     background-color: transparent;
   }
   #chatbot {
@@ -184,20 +159,6 @@ body{
 }
 
 
-/*the modifications*/
-/* ... (your other CSS rules) ... *//*
-#chatbot-icon-container {
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
-    z-index: 20;
-}
-#chatbot-icon {
-    height: 6%;
-    display: flex;
-    box-shadow: 0 0 0.1cm rgb(120, 120, 120);
-    border-radius: 50%;
-}
 
 /* Responsive design for screens with width 467px and below */
 @media (max-width: 467px) {
@@ -210,7 +171,7 @@ body{
         display:flex;
         position:fixed;
         right:5%;
-        height:10%;
-        top:84%;
+        height:8%;
+        top:88%;
     }
 }
