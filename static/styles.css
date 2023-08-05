@@ -17,6 +17,12 @@
     box-shadow: 0 0 0.1cm rgb(120, 120, 120);
     border-radius: 50%;
 }*/
+#extra{
+    position:relative;
+    background-color:red;
+    width:100%;
+    left:50%;
+}
 body{
     background-color: transparent;
   }
