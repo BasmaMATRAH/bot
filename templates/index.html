@@ -7,17 +7,19 @@
     <title>AI SwiftFlow</title>
 </head>
 <body>
-    <img src="{{ url_for('static', filename='icon.jpg') }}" alt="" id="chatbot-icon" onclick="toggleChatbot()">
+    <div id="chatbot-icon-container">
+        <img src="{{ url_for('static', filename='icon.jpg') }}" alt="" id="chatbot-icon" onclick="toggleChatbot()">
+    </div>
     <div id="chatbot" style="display:none;">
         <div class="chatbot-info">
             <img src="{{ url_for('static', filename='pngwing.com_.png') }}" alt="" id="chatbot-img">
             <p id="chatbot-name">Bissa - Virtual Assistant</p>
         </div>
         <div class="chatbot-convo">
+            <!-- ... (rest of your chatbot conversation HTML) ... -->
         </div>
         <div id="chatbot-input">
-            <input type="text" placeholder="Enter Your Question here" id="chatbot-input-field">
-            <img src="{{ url_for('static', filename='send.png') }}" alt="" id="chatbot-send" onclick="sendMessage()">
+            <!-- ... (rest of your chatbot input HTML) ... -->
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
