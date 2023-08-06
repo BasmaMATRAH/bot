@@ -14,10 +14,10 @@
             <p id="chatbot-name">Bissa - Virtual Assistant</p>
         </div>
         <div class="chatbot-convo">
-            <!-- ... (rest of your chatbot conversation HTML) ... -->
         </div>
         <div id="chatbot-input">
-            <!-- ... (rest of your chatbot input HTML) ... -->
+            <input type="text" placeholder="Enter Your Question here" id="chatbot-input-field">
+            <img src="{{ url_for('static', filename='send.png') }}" alt="" id="chatbot-send" onclick="sendMessage()">
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
