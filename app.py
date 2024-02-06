@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__, static_url_path='/static')
 
 # Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Reading the knowledge base
 file_path = "example- kb.txt"
